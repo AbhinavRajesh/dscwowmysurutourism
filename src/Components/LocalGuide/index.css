@@ -1,0 +1,21 @@
+.LocalGuideMain {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  background: rgb(0, 0, 0);
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(88, 88, 88, 1) 100%
+  );
+  padding: 30px;
+}
+
+.LocalGuideMain img {
+  height: 50vh;
+  position: absolute;
+  top: 25%;
+  left: 50px;
+}

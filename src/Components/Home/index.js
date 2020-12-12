@@ -6,6 +6,7 @@ import Image2 from "../../assets/img/2.jpg";
 import { useState } from "react";
 
 import "./index.css";
+import { motion } from "framer-motion";
 
 const Home = (props) => {
   const [presentImage, setPresentImage] = useState(
@@ -19,8 +20,44 @@ const Home = (props) => {
     setSelected(imgNo);
   };
 
+  const pageVariants = {
+    initial: {
+      opacity: 0,
+      x: "100vw",
+      scale: 1,
+    },
+    in: {
+      opacity: 1,
+      x: "0px",
+      scale: 1,
+      //   transition: { delay: 0, duration: 1.5 },
+    },
+    out: {
+      opacity: 0,
+      x: "-100vw",
+      scale: 1.2,
+    },
+  };
+
+  const pageTransition = {
+    type: "tween",
+    ease: "anticipate",
+    duration: 0.5,
+  };
+
+  const pageStyle = {
+    position: "absolute",
+  };
+
   return (
-    <>
+    <motion.div
+      style={pageStyle}
+      initial="initial"
+      animate="in"
+      exit="out"
+      variants={pageVariants}
+      transition={pageTransition}
+    >
       <div className="homeMain">
         <div className="filterHome"></div>
         <Navbar />
@@ -69,8 +106,8 @@ const Home = (props) => {
           />
         </div>
       </div>
-    </>
+    </motion.div>
   );
-};  
+};
 
 export default Home;

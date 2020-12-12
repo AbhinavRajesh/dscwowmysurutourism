@@ -22,4 +22,10 @@
   margin: 5px;
   height: 400px;
   width: 500px;
+  transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
+  cursor: pointer;
+}
+
+.gallery img:hover {
+  transform: scale(1.2);
 }

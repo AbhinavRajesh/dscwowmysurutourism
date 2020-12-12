@@ -14,9 +14,42 @@
   width: 100%;
 }
 .placeContainer {
+  display: flex;
+  height: 100vh;
+  align-items: center;
   z-index: 5;
   color: white;
+  padding: 0 75px;
+}
+.left-place,
+.right-place {
+  flex: 1;
 }
 .placeContainer h2 {
   margin: 0;
+}
+.left-place {
+  padding: 50px 40px;
+  margin-right: 50px;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.45);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+}
+.left-place h2 {
+  font-size: 36px;
+  font-weight: 900;
+}
+.left-place p {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.right-place img {
+  height: 400px;
+  width: 700px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.363);
 }

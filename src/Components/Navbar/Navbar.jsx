@@ -19,8 +19,8 @@ const Navbar = () => {
             <nav>
                 <ul>
                     <Link to="/"><li>Home</li></Link>
-                    <Link to="/"><li>Find Local Guide</li></Link>
-                    <Link to="/"><li>Blog</li></Link>
+                    <Link to="/guide"><li>Find Local Guide</li></Link>
+                    <Link to="/blog"><li>Blog</li></Link>
                     <Link to="/"><li>About</li></Link>
                     <Link to="/"><li>Gallery</li></Link>
                     <Link to="/"><li>Contact</li></Link>
@@ -31,8 +31,8 @@ const Navbar = () => {
                 <ul>
                     <Link  className="closebtn" onClick={closeNav}>×</Link>
                     <Link to="/"><li>Home</li></Link>
-                    <Link to="/"><li>Find Local Guide</li></Link>
-                    <Link to="/"><li>Blog</li></Link>
+                    <Link to="/guide"><li>Find Local Guide</li></Link>
+                    <Link to="/blog"><li>Blog</li></Link>
                     <Link to="/"><li>About</li></Link>
                     <Link to="/"><li>Gallery</li></Link>
                     <Link to="/"><li>Contact</li></Link>

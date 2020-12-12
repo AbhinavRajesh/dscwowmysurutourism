@@ -1,10 +1,20 @@
 import GuideCard from "./LocalGuideCard";
 import "./index.css";
+import Navbar from "../Navbar/Navbar";
 
 const LocalGuide = () => {
   return (
     <div className="LocalGuideMain">
-      <GuideCard />
+      <Navbar />
+      <div className="LocalGuideContainer">
+        <GuideCard />
+        <GuideCard />
+        <GuideCard />
+        <GuideCard />
+        <GuideCard />
+        <GuideCard />
+        <GuideCard />
+      </div>
     </div>
   );
 };

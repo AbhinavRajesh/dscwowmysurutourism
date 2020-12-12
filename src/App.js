@@ -1,13 +1,8 @@
 import "./App.css";
+import { Page } from "framer";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Hola!</h1>
-      </header>
-    </div>
-  );
+  return <Page momentum />;
 }
 
 export default App;

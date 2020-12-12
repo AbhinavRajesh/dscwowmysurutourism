@@ -1,0 +1,25 @@
+.galleryWrapper {
+  background-color: #1d1d1d;
+  color: white;
+}
+
+.galleryContainer {
+  padding: 0 100px;
+}
+.galleryContainer h2 {
+  display: flex;
+  font-size: 48px;
+  margin-bottom: 0;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  margin: 5px;
+  height: 400px;
+  width: 500px;
+}

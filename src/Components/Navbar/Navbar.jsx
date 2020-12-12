@@ -22,7 +22,7 @@ const Navbar = () => {
                     <Link to="/guide"><li>Find Local Guide</li></Link>
                     <Link to="/blog"><li>Blog</li></Link>
                     <Link to="/"><li>About</li></Link>
-                    <Link to="/"><li>Gallery</li></Link>
+                    <Link to="/gallery"><li>Gallery</li></Link>
                     <Link to="/"><li>Contact</li></Link>
                 </ul>
             </nav>
@@ -34,7 +34,7 @@ const Navbar = () => {
                     <Link to="/guide"><li>Find Local Guide</li></Link>
                     <Link to="/blog"><li>Blog</li></Link>
                     <Link to="/"><li>About</li></Link>
-                    <Link to="/"><li>Gallery</li></Link>
+                    <Link to="/gallery"><li>Gallery</li></Link>
                     <Link to="/"><li>Contact</li></Link>
                 </ul>
             </div>

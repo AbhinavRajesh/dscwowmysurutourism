@@ -4,6 +4,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Guide from "./Components/LocalGuide";
 import Home from "./Components/Home";
 import Blog from "./Components/Blog/Blog";
+import Gallery from "./Components/Gallery/Gallery";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route exact path="/guide" component={Guide} />
         <Route path="/blog" component={Blog} />
+        <Route path="/gallery" component={Gallery} />
       </Switch>
     </BrowserRouter>
   );

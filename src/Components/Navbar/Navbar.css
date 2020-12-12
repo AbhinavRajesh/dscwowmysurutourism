@@ -1,5 +1,5 @@
 header {
-  min-height: 10vh;
+  min-height: 5vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,19 +8,18 @@ header {
   /* width: 100%; */
 }
 .logo {
-  flex: 1 2;
+  flex: 1;
 }
 .logo img {
-  transform: translateY(10px);
+  /* transform: translateY(10px); */
   height: 60px;
 }
 nav {
-  flex: 2 1;
+  flex: 2;
 }
 
 ul {
   list-style: none;
-  width: 100%;
   display: flex;
   justify-content: space-between;
 }

@@ -6,11 +6,11 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
 }
 
 .Other {
   flex: 9;
+  display: flex;
 }
 
 .BottomImageBar {
@@ -20,4 +20,40 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+}
+.left-other {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10vw;
+  justify-content: center;
+  align-items: flex-start;
+  flex: 1;
+}
+.left-other h2 {
+  margin: 0;
+  font-weight: 900;
+  line-height: 58px;
+  font-size: 64px;
+}
+.left-other a {
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 7px;
+  padding: 15px 30px;
+  background-color: white;
+  color: black;
+}
+.left-other a i {
+  padding-left: 10px;
+}
+.right-other {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 2;
+}
+.right-other img {
+  height: 500px;
+  border-radius: 10px;
 }

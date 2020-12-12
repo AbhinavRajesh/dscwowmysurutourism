@@ -5,6 +5,7 @@ import Guide from "./Components/LocalGuide";
 import Home from "./Components/Home";
 import Blog from "./Components/Blog/Blog";
 import Gallery from "./Components/Gallery/Gallery";
+import PageLayout from "./Components/PageLayout/PageLayout";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route exact path="/guide" component={Guide} />
         <Route path="/blog" component={Blog} />
         <Route path="/gallery" component={Gallery} />
+        <Route path="/:id" component={PageLayout} />
       </Switch>
     </BrowserRouter>
   );

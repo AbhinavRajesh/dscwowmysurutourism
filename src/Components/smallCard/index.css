@@ -1,0 +1,13 @@
+.smCardMain img {
+  width: 150px;
+  height: 140px;
+  border-radius: 20px;
+  border: solid white 3px;
+  transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
+  position: relative;
+}
+
+.smCardMain img:hover {
+  transform: translateY(-50px);
+  cursor: pointer;
+}

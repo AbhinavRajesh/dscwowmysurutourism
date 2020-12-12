@@ -1,0 +1,23 @@
+.homeMain {
+  background: url("../../assets/img/Home.jpg");
+
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.Other {
+  flex: 9;
+}
+
+.BottomImageBar {
+  flex: 1;
+  padding: 10px;
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}

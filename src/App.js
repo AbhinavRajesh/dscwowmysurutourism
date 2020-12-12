@@ -1,8 +1,12 @@
 import "./App.css";
-import { Page } from "framer";
+import Home from "./Components/Home";
 
 function App() {
-  return <Page momentum />;
+  return (
+    <>
+      <Home />
+    </>
+  );
 }
 
 export default App;

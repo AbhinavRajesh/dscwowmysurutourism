@@ -20,9 +20,9 @@ const Navbar = () => {
                 <ul>
                     <Link to="/"><li>Home</li></Link>
                     <Link to="/"><li>Destinations</li></Link>
-                    <Link to="/"><li>Blog</li></Link>
+                    <Link to="/blog"><li>Blog</li></Link>
                     <Link to="/"><li>About</li></Link>
-                    <Link to="/"><li>Gallery</li></Link>
+                    <Link to="/gallery"><li>Gallery</li></Link>
                     <Link to="/"><li>Contact</li></Link>
                 </ul>
             </nav>
@@ -32,9 +32,9 @@ const Navbar = () => {
                     <Link  className="closebtn" onClick={closeNav}>×</Link>
                     <Link to="/"><li>Home</li></Link>
                     <Link to="/"><li>Destinations</li></Link>
-                    <Link to="/"><li>Blog</li></Link>
+                    <Link to="/blog"><li>Blog</li></Link>
                     <Link to="/"><li>About</li></Link>
-                    <Link to="/"><li>Gallery</li></Link>
+                    <Link to="/gallery"><li>Gallery</li></Link>
                     <Link to="/"><li>Contact</li></Link>
                 </ul>
             </div>

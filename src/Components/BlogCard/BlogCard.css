@@ -1,0 +1,15 @@
+.blogCard {
+  padding: 60px;
+  margin: 10px 0;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.45);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+}
+.blogCard h3 {
+  font-size: 28px;
+}
+.blogCard a {
+  border-bottom: 1px solid white;
+}

@@ -2,28 +2,24 @@
   background: url("../../assets/img/blog.jpg");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   position: relative;
 }
-.blogFilter {
+.filterBlog {
   position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.75);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(9px);
-  -webkit-backdrop-filter: blur(9px);
+  top: 0px;
+  right: 0px;
+  background: rgba(0, 0, 0, 0.6);
 }
-
 .blogContainer {
+  color: white;
   display: flex;
-  height: 100vh;
+  z-index: 1;
 }
-
 .blog-left {
   flex: 1;
-  padding: 100px;
+  padding: 0 100px;
 }
 .blog-left h2 {
   font-weight: 900;
@@ -31,7 +27,7 @@
 }
 .blog-left a {
   text-decoration: none;
-  color: black;
+  color: white;
   width: 100%;
   font-weight: 700;
 }

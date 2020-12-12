@@ -1,11 +1,11 @@
 header {
-  min-height: 5vh;
+  min-height: 3vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  background-color: rgba(0, 0, 0, 0.322);
-  /* width: 100%; */
+  /* background-color: rgba(0, 0, 0, 0.322); */
+  z-index: 1;
 }
 .logo {
   flex: 1;
@@ -54,7 +54,7 @@ ul a {
   top: 4%;
   right: 10%;
 }
-p {
+#hamburger {
   display: none;
   font-size: 24px;
   color: white;
@@ -72,7 +72,7 @@ p {
   ul li {
     padding: 10px;
   }
-  p {
+  #hamburger {
     display: block;
   }
   .nav-mobile {

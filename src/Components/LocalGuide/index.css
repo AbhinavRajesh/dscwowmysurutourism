@@ -1,5 +1,6 @@
 .LocalGuideMain {
   min-height: 100vh;
+  width: 100vw;
 
   background: url("../../assets/img/guide.jpg");
   background-position: center;

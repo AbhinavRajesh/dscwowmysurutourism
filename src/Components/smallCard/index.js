@@ -3,11 +3,18 @@ import "./index.css";
 
 const SmallCard = (props) => {
   return (
-    <div className="smCardMain">
-      <img
-        src="https://cdn.britannica.com/58/124658-050-28314DA4/Maharaja-Palace-Mysuru-Karnataka-India.jpg"
-        alt="place"
-      />
+    <div
+      className="smCardMain"
+      onClick={props.onClick}
+      style={
+        props.style
+          ? {
+              transform: "translateY(-50px)",
+            }
+          : null
+      }
+    >
+      <img src={props.img} alt="place" />
     </div>
   );
 };

@@ -4,17 +4,18 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  background-color: rgba(0, 0, 0, 0.322);
+  /* background-color: rgba(0, 0, 0, 0.322); */
+  z-index: 1;
 }
 .logo {
-  flex: 1 2;
+  flex: 1;
 }
 .logo img {
-  transform: translateY(10px);
+  /* transform: translateY(10px); */
   height: 60px;
 }
 nav {
-  flex: 2 1;
+  flex: 2;
 }
 
 ul {

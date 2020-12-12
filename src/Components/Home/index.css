@@ -1,16 +1,26 @@
 .homeMain {
-  background: url("../../assets/img/Home.jpg");
-
+  background-image: url("../../assets/img/Home.jpg");
   background-position: center;
   background-size: cover;
   height: 100vh;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .Other {
   flex: 9;
+  z-index: 1;
   display: flex;
+}
+
+.filterHome {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  right: 0px;
+  background: rgb(50 50 50 / 24%);
 }
 
 .BottomImageBar {
@@ -53,7 +63,12 @@
   justify-content: center;
   flex: 2;
 }
-.right-other img {
+
+.ImageContainer {
   height: 500px;
+  width: 800px;
   border-radius: 10px;
+  background-size: cover;
+  cursor: pointer;
+  background-position: center;
 }

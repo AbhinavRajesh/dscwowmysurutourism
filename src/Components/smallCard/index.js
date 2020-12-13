@@ -4,6 +4,8 @@ import "./index.css";
 const SmallCard = (props) => {
   return (
     <div
+      initial="visible"
+      animate={"hidden"}
       className="smCardMain"
       onClick={props.onClick}
       style={

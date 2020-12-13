@@ -21,9 +21,7 @@ const Navbar = () => {
                     <Link to="/"><li>Home</li></Link>
                     <Link to="/guide"><li>Find Local Guide</li></Link>
                     <Link to="/blog"><li>Blog</li></Link>
-                    <Link to="/"><li>About</li></Link>
                     <Link to="/gallery"><li>Gallery</li></Link>
-                    <Link to="/"><li>Contact</li></Link>
                 </ul>
             </nav>
             <p onClick={openNav} id="hamburger">☰</p>
@@ -33,9 +31,7 @@ const Navbar = () => {
                     <Link to="/"><li>Home</li></Link>
                     <Link to="/guide"><li>Find Local Guide</li></Link>
                     <Link to="/blog"><li>Blog</li></Link>
-                    <Link to="/"><li>About</li></Link>
                     <Link to="/gallery"><li>Gallery</li></Link>
-                    <Link to="/"><li>Contact</li></Link>
                 </ul>
             </div>
         </header>

@@ -21,6 +21,7 @@ const GuideCard = (props) => {
       variants={variants}
       custom={props.custom}
       className="GuideCardMain"
+      whileHover={{ y: -30 }}
     >
       <div className="avatarGuide">
         <img alt="avatar" src={Man} />

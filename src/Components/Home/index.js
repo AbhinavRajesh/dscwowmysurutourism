@@ -15,13 +15,13 @@ const Home = (props) => {
   const [presentImage, setPresentImage] = useState(
     "https://cdn.britannica.com/58/124658-050-28314DA4/Maharaja-Palace-Mysuru-Karnataka-India.jpg"
   );
+  const [presentTitle, setPresentTitle] = useState("Mysore Palace");
 
   const [selectedImage, setSelected] = useState(1);
 
-  var i = 0;
-
-  const setImage = (image, imgNo) => {
+  const setImage = (image, imgNo, title) => {
     setPresentImage(image);
+    setPresentTitle(title);
     setSelected(imgNo);
   };
 
@@ -85,6 +85,7 @@ const Home = (props) => {
                 },
               }}
             >
+              <h1>{presentTitle}</h1>
               <motion.div
                 className="ImageContainer"
                 initial="hidden"
@@ -112,20 +113,24 @@ const Home = (props) => {
             onClick={() =>
               setImage(
                 "https://cdn.britannica.com/58/124658-050-28314DA4/Maharaja-Palace-Mysuru-Karnataka-India.jpg",
-                1
+                1,
+                "Mysore Palace"
               )
             }
             img="https://cdn.britannica.com/58/124658-050-28314DA4/Maharaja-Palace-Mysuru-Karnataka-India.jpg"
+            title="Mysore Palace"
           />
           <SmallCard
-            onClick={() => setImage(Image2, 2)}
+            onClick={() => setImage(Image2, 2, "Brindavan Gardens")}
             img={Image2}
             style={selectedImage === 2 ? true : null}
+            title="Brindavan Gardens"
           />
           <SmallCard
-            onClick={() => setImage(Image1, 3)}
+            onClick={() => setImage(Image1, 3, "Temple")}
             img={Image1}
             style={selectedImage === 3 ? true : null}
+            title="Temple"
           />
         </motion.div>
       </div>

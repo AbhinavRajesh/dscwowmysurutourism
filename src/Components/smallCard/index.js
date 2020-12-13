@@ -14,6 +14,7 @@ const SmallCard = (props) => {
           : null
       }
     >
+      <p>{props.title}</p>
       <img src={props.img} alt="place" />
     </div>
   );

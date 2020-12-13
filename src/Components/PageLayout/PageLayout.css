@@ -19,7 +19,7 @@
   align-items: center;
   z-index: 5;
   color: white;
-  padding: 0 75px;
+  padding: 0 75px 0 0;
 }
 .left-place,
 .right-place {
@@ -29,7 +29,12 @@
   margin: 0;
 }
 .left-place {
-  padding: 50px 40px;
+  flex: 3;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 100px;
   margin-right: 50px;
   border-radius: 15px;
   background: rgba(0, 0, 0, 0.45);
@@ -47,6 +52,7 @@
 }
 
 .right-place img {
+  flex: 1;
   height: 400px;
   width: 700px;
   object-fit: cover;

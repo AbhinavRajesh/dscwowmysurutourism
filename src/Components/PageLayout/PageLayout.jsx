@@ -66,11 +66,11 @@ const PageLayout = (props) => {
                             delay: 1.4,
                             ...transition
                         }
-                    }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur corporis nisi minus facilis eligendi modi, voluptates eveniet, nobis repellendus, autem mollitia cum. Sunt ab odio aliquam. Sapiente unde cumque culpa voluptate sunt ut quasi ab reiciendis est temporibus vero distinctio officia magnam necessitatibus, tempora dolores ducimus eos non? Natus, voluptatem.</motion.p>
+                    }}>The second most famous attraction in India, first being the Taj Mahal, Mysore Palace is easily one of the most imposing architectural buildings in the country. It is amazing that the palace was only built in the 20th century and is the fourth structure to be constructed on the same location.</motion.p>
                 </motion.div>
                 <motion.div 
                     initial={{ opacity: 0, y: "30%" }} 
-                    animate={{
+                    animate={{ 
                         opacity: 1,
                         y: 0,
                         transition: {

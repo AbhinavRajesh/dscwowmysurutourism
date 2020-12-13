@@ -1,12 +1,22 @@
 import './PageLayout.css';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 import image from "../../assets/img/guide.jpg"
+import { useEffect, useState } from 'react';
 
 const transition = { duration: 1.2, ease: [0.43, .13, .23, .96]}
 
-const PageLayout = () => {
+const PageLayout = (props) => {
+
+    const [presentImage, setPresentImage] = useState();
+
+    useEffect(() => {
+        if(props.location.state){
+            setPresentImage(props.location.state.img);
+        }
+    },[props.location.state])
+
     return (
         <motion.div 
             className="placeWrapper"
@@ -14,6 +24,7 @@ const PageLayout = () => {
             animate='animate'
             exit='exit'
         >
+            {presentImage && 
             <div className="backgroundImage">
                 <motion.img 
                     initial={{ width: "800px", height: "500px", y: "40%", x: "-10%"  }} 
@@ -24,8 +35,9 @@ const PageLayout = () => {
                         height: "100vh",
                         transition: {delay: .2, ...transition}
                     }}
-                    src="https://cdn.britannica.com/58/124658-050-28314DA4/Maharaja-Palace-Mysuru-Karnataka-India.jpg" alt="main"/>
+                    src={presentImage} alt="main"/>
             </div>
+            }
             <div className="placeContainer">
                 <motion.div 
                     initial={{ opacity: 0 }} 
@@ -79,4 +91,4 @@ const PageLayout = () => {
     );
 }
 
-export default PageLayout;
+export default withRouter( PageLayout);

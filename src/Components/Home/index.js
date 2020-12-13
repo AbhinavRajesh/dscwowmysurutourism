@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 import SmallCard from "../smallCard";
 import Navbar from "../Navbar/Navbar";
 import Image1 from "../../assets/img/1.jpg";
@@ -49,7 +49,7 @@ const Home = (props) => {
     position: "absolute",
   };
 
-  const transition = { duration: 0.6, ease: [0.43, .13, .23, .96]}
+  const transition = { duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] };
 
   return (
     <motion.div
@@ -79,21 +79,33 @@ const Home = (props) => {
             </Link>
           </div>
           <div className="right-other">
-            <Link to="/123">
+            <Link
+              to={{
+                pathname: "/123",
+                state: {
+                  img: presentImage,
+                },
+              }}
+            >
               <div
                 className="ImageContainer"
                 style={{ backgroundImage: `url(${presentImage})` }}
               >
-                <motion.img 
-                  src={presentImage} 
-                  whileHover= {{ scale: 1.1}}
+                <motion.img
+                  src={presentImage}
+                  whileHover={{ scale: 1.1 }}
                   transition={transition}
-                  alt="Mysuru"/>
+                  alt="Mysuru"
+                />
               </div>
             </Link>
           </div>
         </div>
-        <motion.div exit={{ opacity: 0}} transition={transition} className="BottomImageBar">
+        <motion.div
+          exit={{ opacity: 0 }}
+          transition={transition}
+          className="BottomImageBar"
+        >
           <SmallCard
             style={selectedImage === 1 ? true : null}
             onClick={() =>
@@ -120,4 +132,4 @@ const Home = (props) => {
   );
 };
 
-export default Home;
+export default withRouter(Home);

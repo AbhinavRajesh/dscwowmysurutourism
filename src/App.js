@@ -11,7 +11,7 @@ import PageLayout from "./Components/PageLayout/PageLayout";
 function App() {
   return (
     <BrowserRouter>
-      <AnimatePresence>
+      <AnimatePresence exitBeforeEnter>
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/guide" component={Guide} />

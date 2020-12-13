@@ -49,6 +49,8 @@ const Home = (props) => {
     position: "absolute",
   };
 
+  const transition = { duration: 0.6, ease: [0.43, .13, .23, .96]}
+
   return (
     <motion.div
       style={pageStyle}
@@ -77,13 +79,21 @@ const Home = (props) => {
             </Link>
           </div>
           <div className="right-other">
-            <div
-              className="ImageContainer"
-              style={{ backgroundImage: `url(${presentImage})` }}
-            ></div>
+            <Link to="/123">
+              <div
+                className="ImageContainer"
+                style={{ backgroundImage: `url(${presentImage})` }}
+              >
+                <motion.img 
+                  src={presentImage} 
+                  whileHover= {{ scale: 1.1}}
+                  transition={transition}
+                  alt="Mysuru"/>
+              </div>
+            </Link>
           </div>
         </div>
-        <div className="BottomImageBar">
+        <motion.div exit={{ opacity: 0}} transition={transition} className="BottomImageBar">
           <SmallCard
             style={selectedImage === 1 ? true : null}
             onClick={() =>
@@ -104,7 +114,7 @@ const Home = (props) => {
             img={Image1}
             style={selectedImage === 3 ? true : null}
           />
-        </div>
+        </motion.div>
       </div>
     </motion.div>
   );

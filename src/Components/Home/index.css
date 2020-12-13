@@ -71,5 +71,11 @@
   background-size: cover;
   cursor: pointer;
   background-position: center;
-  transition: all 1s ease-in-out;
+  overflow: hidden;
+}
+
+.ImageContainer img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }

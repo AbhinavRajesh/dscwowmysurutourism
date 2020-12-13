@@ -79,3 +79,43 @@
   width: 100%;
   object-fit: cover;
 }
+
+.homeSecondary {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.homeLeftContainer {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.homeimgbackground {
+  height: 100vh;
+  background-color: #dc0963;
+  width: 360px;
+}
+.bg1 {
+  transform: translateX(-70%);
+}
+.bg2 {
+  transform: translateX(70%);
+}
+.homeRightContainer {
+  flex: 2;
+  padding: 0 70px;
+}
+.homeRightContainer h3 {
+  font-size: 48px;
+  font-weight: 700;
+}
+.homeRightContainer p {
+  font-size: 22px;
+  font-weight: 500;
+  padding: 10px 0;
+}
+.mysoreMap img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+}
